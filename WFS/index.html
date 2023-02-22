@@ -8,10 +8,14 @@
     <title>WFS</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
+	<link href="football-league\css\app.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="football-league\js\app.js"></script>
   </head>
   
 <body>
@@ -26,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><i class="fa fa-trophy"></i> WORLD<span>FOOT</span>SCOUT</a>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-trophy"></i> W<span>F</span>S</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,18 +40,21 @@
                     </li>
                      
 					<li>
-                        <a class="tag_menu" href="about.html">RATING & CATEGORIES</a>
+                        <a class="tag_menu" href="report.html">REPORTS</a>
                     </li>
 					 
 				    <li>
-                        <a class="tag_menu" href="blog.html">ARTICLES</a>
+                        <a class="tag_menu" href="report.html">ARTICLES</a>
                     </li>
 					
 					<li>
-                        <a class="tag_menu" href="blog_detail.html">PRICES</a>
+                        <a class="tag_menu" href="report.html">MISSIONS</a>
                     </li>
 					<li>
-                        <a class="tag_menu" href="contact.html">CONTACT</a>
+                        <a class="tag_menu" href="report.html">RATES</a>
+                    </li>
+					<li>
+                        <a class="tag_menu" href="report.html">CONTACT</a>
                     </li>
 					<li class="dropdown"><a class="tag_menu" href="#" data-toggle="dropdown"><span class="fa fa-search"></span></a>
 							<ul class="dropdown-menu drop_2" style="min-width: 300px;">
@@ -68,28 +75,13 @@
 								</li>
 							</ul>
 						</li>
-					<li class="dropdown">
-					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-shopping-cart"></i></a>
-					  <ul class="dropdown-menu drop_1" role="menu">
-						<li></li>
-					  </ul>
-                    </li>
-					
-					<li class="dropdown">
-					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
-					  <ul class="dropdown-menu drop_1" role="menu">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="about.html">RATINGS & CATEGORIES</a></li>
-						<li><a href="team.html">ARTICLES</a></li>
-						<li><a href="team.html">PRICES</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					  </ul>
-                    </li>
-					
-					
-					
+                        <li>
+                            <a class="tag_menu" href="profile.html"><i class="fa fa-address-book-o"></i></a>
+                        </li>
+                        <li>
+                            <a class="tag_menu" href="about.html">LOGIN</a>
+                        </li>
                 </ul>
-				
             </div>
 		   </div>
         </div>
@@ -107,31 +99,59 @@
     <div class="item active">
       <img alt="abc" class="iw" src="img\Untitled design (1).jpg">
     </div>
-  </div>
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
     
-    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
-      <img alt="" src="img\0_GettyImages-1243055869.jpg">
-    </li>
-    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
-      <img alt="" src="img\01gs0bdafcs8s51bnnpx.webp">
-    </li>
-    <li class="" data-slide-to="3" data-target="#article-photo-carousel">
-      <img alt="" src="img\bIUGqazcW_340x340__1.webp">
-    </li>
-  </ol>
+  </div>
 </div>
    <div class="center_home_mi clearfix">
-    <h1>WELCOME TO<br>WFS</h1>
+    <h1>WELCOME TO<br> WFS </h1>
 	<p>THE PLATFORM BETWEEN SCOUTS AND CLUBS</p>
 	<h5><a class="button" href="#">CREATE A REPORT<i class="fa fa-chevron-right"></i></a></h5>
 	<h5><a class="button" href="#">BUY A REPORT<i class="fa fa-chevron-right"></i></a></h5>
    </div>
  </div>
- 
 </section>
+<script>
+	$(document).on('click', '.panel-heading span.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '.panel div.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).ready(function () {
+    $('.panel-heading span.clickable').click();
+    $('.panel div.clickable').click();
+});
 
+	</script>
+
+<script>
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
 </body>
  
 </html>

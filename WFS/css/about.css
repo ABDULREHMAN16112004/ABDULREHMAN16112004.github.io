@@ -1,0 +1,230 @@
+
+.center_about{
+ margin-top:53px;
+ background-image: url(../img/54.jpg);
+ }
+
+#about_page{
+ padding-top:40px;
+ padding-bottom:40px; 
+  }
+
+.league_m{
+  padding-top:50px;
+  padding-bottom:40px;
+  background:#f4f4f4;
+  }
+.league_1{
+ text-align:center;
+ margin-top:20px;
+ }
+.league_1 h4{
+margin-top:20px; 
+  }
+.league_1 h4 span{
+color:#c1e729; 
+  }
+
+#story{
+ padding-top:40px;
+ padding-bottom:40px; 
+  }
+.story_1 img{
+margin-top:20px;  
+  }
+.contact_ab_1li h5 i{
+margin-right:5px;
+font-size:22px; 
+vertical-align:middle; 
+  }
+.contact_ab_1li{
+margin-top:15px;  
+  }
+.contact_ab_1l{
+padding-top:40px;  
+  }
+  * {
+    font-family: Montserrat;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+  }
+  :root {
+    --color-white: #000000;
+    --color-darkblue: #ffffff;
+    --color-darkblue-alpha: rgb(255, 255, 255);
+    --color-green: #0fff06;
+  }
+  h1{
+    font-size: 2.7em;
+  }
+  
+  body {
+    background-image: url(../img/wo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    margin: 3rem 0 3.5rem 0;
+  }
+  .description {
+    font-style: italic;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  .box {
+    border-radius: 20px;
+    width: 800px;
+    padding: 100px 100px;
+    z-index: 0;
+  }
+  form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 3rem;
+    border-radius: 0.9rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select[name="features"] {
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    margin: 0.7rem 0rem;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+  }
+  label[for="name"],
+  label[for="email"],
+  label[for="age"] {
+    font-size: 21px;
+  }
+  .almostlabel {
+    font-size: 21px;
+  }
+  .questions {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.1rem;
+  }
+  .input-radio,
+  .input-checkbox {
+    /* display: inline-block; */
+    margin-right: 0.625rem;
+    margin-bottom: 1.4rem;
+  }
+  select,
+  option,
+  #openfeedback {
+    color: black;
+  }
+  textarea {
+    min-height: 120px;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    resize: vertical;
+  }
+  .submit-button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--color-green);
+      color: inherit;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  .submitcontainer{
+      margin-top: 10px;
+    }
+    .btn {
+      border: 2px solid black;
+      background-color: rgb(0, 0, 0);
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn0 {
+      border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    /* Green */
+    .success {
+      border-color: #ffffff;
+      color: rgb(139, 255, 104);
+    }
+    
+    .success:hover {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+    }
+    
+    /* Blue */
+    .info {
+      border-color: #000000;
+      color: rgb(0, 0, 0)
+    }
+    
+    .info:hover {
+      background: #85ff66;
+      color: rgb(255, 255, 255);
+    }
+    
+/*********************about_end****************/
+
+
+@media screen and (max-width : 767px){
+.center_about{
+ margin-top:0; 
+  }
+#about_page{
+ text-align:center; 
+  }
+.league_1i {
+ margin-bottom:10px;
+ }
+.story_1 {
+ text-align:center;
+ }
+#contact_ab{
+ text-align:center;
+ }
+.contact_ab_1r {
+margin-top:15px; 
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.contact_ab_1li h5 i{
+display:none;
+ }
+.contact_ab_1li h5{
+ font-size:14px; 
+  }
+ }
+ @media (min-width:992px) and (max-width:1200px) {
+ .contact_ab_1li h5 i{
+display:none;
+ }
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
