@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WFS</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<link href="football-league\css\app.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="football-league\js\app.js"></script>
+  </head>
+  
+<body>
+<section id="header">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+		   <div class="col-sm-12">
+		    <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> <span>WFS</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="tag_menu  active_tab" href="index.html">HOME</a>
+                    </li>
+                     
+					<li>
+                        <a class="tag_menu" href="report.html">REPORTS</a>
+                    </li>
+					 
+				    <li>
+                        <a class="tag_menu" href="report.html">ARTICLES</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="report.html">MISSIONS</a>
+                    </li>
+					<li>
+                        <a class="tag_menu" href="report.html">RATES</a>
+                    </li>
+					<li>
+                        <a class="tag_menu" href="report.html">CONTACT</a>
+                    </li>
+                        <li>
+                            <a class="tag_menu" href="about.html">LOGIN</a>
+                        </li>
+                </ul>
+            </div>
+		   </div>
+        </div>
+ 
+    </nav>
+</section>
+
+<section id="center" class="clearfix center_home">
+ <div class="center_home_m clearfix">
+   <div class="carousel slide article-slide" id="article-photo-carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+
+    <div class="item active">
+      <img alt="abc" class="iw" src="img\Untitled design (1).jpg">
+    </div>
+    
+  </div>
+</div>
+   <div class="center_home_mi clearfix">
+    <h1>WELCOME TO</h1>
+    <br>
+    <h1 style="color: yellowgreen;">WFS</h1>
+	<p>THE PLATFORM BETWEEN SCOUTS AND CLUBS</p>
+	<h5><a class="button" href="#">ACESS ACCOUNT<i class="fa fa-chevron-right"></i></a></h5>
+   </div>
+ </div>
+</section>
+<script>
+	$(document).on('click', '.panel-heading span.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '.panel div.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).ready(function () {
+    $('.panel-heading span.clickable').click();
+    $('.panel div.clickable').click();
+});
+
+	</script>
+
+<script>
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+</body>
+ 
+</html>
