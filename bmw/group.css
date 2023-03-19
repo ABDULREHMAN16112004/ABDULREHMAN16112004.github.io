@@ -1,0 +1,153 @@
+#header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+#main {
+	display: flex;
+	flex-direction: row;
+}
+
+#sidebar {
+	flex-basis: 25%;
+	background-color: #eee;
+	padding: 10px;
+}
+
+#chat {
+	flex-basis: 75%;
+	padding: 10px;
+}
+
+#groups {
+	list-style: none;
+	padding: 0;
+}
+
+#groups li {
+	margin-bottom: 10px;
+}
+
+#groups li a {
+	color: #333;
+	text-decoration: none;
+}
+
+#groups li a:hover {
+	text-decoration: underline;
+}
+
+#messages {
+	list-style: none;
+	padding: 0;
+}
+
+.username {
+	font-weight: bold;
+}
+.bordered-button {
+    border: 2px solid hsl(255, 100%, 15%);
+    border-radius: 40px;
+    padding: 1px 25px;
+    font-size: 15px;
+    background-color: #080066;
+    color: #ffffff;
+  }
+  
+  .bordered-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+#message-form, #photo-form, #video-form {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+#message-input, #photo-input, #video-input {
+	flex-grow: 1;
+}
+
+#send-button, #photo-button, #video-button {
+	margin-left: 10px;
+}
+
+#create-group,
+#join-group,
+#leave-group {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#create-group h2,
+#join-group h2,
+#leave-group h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 05px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 05px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0e004c;
+  color: #fff;
+  border: none;
+  padding: 05px 10px;
+  border: 2PX #080066;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+.upload{
+  width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.upload img{
+  border-radius: 50%;
+  border: 6px solid #eaeaea;
+}
+
+.upload .round{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #000660;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type = "file"]{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
