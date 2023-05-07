@@ -1,0 +1,30 @@
+    <!-- Team Section -->
+
+    <section class="team" id="team">
+        <h1 class="heading"> Our <span>CEO</span></h1>
+       
+        <div class="container">
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="images/abc2.jpg" alt="">
+                </div>
+                <div class="team-content">
+                    <h3>Maaz Zulfiqar</h3>
+                    <p>Web Developer & Graphic Designer</p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+    <!-- Team Section End-->
+
+
+
+<a href="#team">CEO</a>
