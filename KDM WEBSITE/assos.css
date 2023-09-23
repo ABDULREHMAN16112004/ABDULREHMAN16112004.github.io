@@ -1,0 +1,83 @@
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_element{
+    background-color: black;
+}
+  
+.listelement{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.nav_lines{
+    margin: 0;
+}
+  
+.nav_anchors{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav_anchors:hover {
+    background-color: #555;
+    color: red;
+}
+.anchor_button:hover {
+    background-color: #555;
+    color: red;
+}
+.anchor_button{
+    background-color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+.Welcome{
+    height: 700px;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+.welcomehead{
+    padding-top: 300px;
+}
+.whoweare{
+    width: 1100px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.introhead{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.paddingleft{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.whyus{
+    width: 1100px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: auto;
+}
+.Contact{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-color: black;
+    color: yellowgreen;
+}
+.contactpara{
+    font-size: 20px;
+    font-weight: bolder;
+}
