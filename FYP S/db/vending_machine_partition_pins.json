@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "red_led",
+					"strict" : false
+				},
+				{
+					"name" : "green_leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "green_leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "green_leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_motor",
+					"strict" : false
+				},
+				{
+					"name" : "buzzer",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "pushbutton",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "IR_Sensor",
+					"strict" : false
+				},
+				{
+					"name" : "row[2]",
+					"strict" : false
+				},
+				{
+					"name" : "row[3]",
+					"strict" : false
+				},
+				{
+					"name" : "row[0]",
+					"strict" : false
+				},
+				{
+					"name" : "row[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

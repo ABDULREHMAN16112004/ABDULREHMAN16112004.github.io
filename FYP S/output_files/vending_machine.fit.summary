@@ -1,0 +1,10 @@
+I/O Assignment Analysis Status : Successful - Fri Jan 17 21:29:41 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : vending_machine
+Top-level Entity Name : vending_machine
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total pins : 25 / 529 ( 5 % )
+Total virtual pins : 0
+Total PLLs : 0 / 4 ( 0 % )

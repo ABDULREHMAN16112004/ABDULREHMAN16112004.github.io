@@ -1,0 +1,14 @@
+module keypad(
+    input logic clk,
+    input logic [3:0] keypad, // External keypad interface
+    output logic [3:0] item_selected
+);
+    always_ff @(posedge clk) begin
+        case (keypad)
+            4'b0001: item_selected = 4'd1; // Item 1
+            4'b0010: item_selected = 4'd2; // Item 2
+            4'b0100: item_selected = 4'd3; // Item 3
+            default: item_selected = 4'd0; // No selection
+        endcase
+    end
+endmodule

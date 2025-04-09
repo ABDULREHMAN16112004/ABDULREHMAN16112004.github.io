@@ -1,0 +1,23 @@
+|seven_segment_display_tb
+
+
+|seven_segment_display_tb|seven_segment_display:dut
+item_price[0] => Decoder1.IN3
+item_price[0] => Decoder2.IN2
+item_price[1] => Decoder0.IN2
+item_price[1] => Decoder1.IN2
+item_price[2] => Decoder0.IN1
+item_price[2] => Decoder1.IN1
+item_price[2] => Decoder2.IN1
+item_price[3] => Decoder0.IN0
+item_price[3] => Decoder1.IN0
+item_price[3] => Decoder2.IN0
+seven_seg[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[2] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[5] <= <GND>
+seven_seg[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

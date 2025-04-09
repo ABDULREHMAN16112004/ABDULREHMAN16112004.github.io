@@ -1,0 +1,12 @@
+
+State Machine - |vending_machine|current_state
+Name current_state.DISPENSE current_state.PAYMENT current_state.SELECT current_state.IDLE current_state.COMPLETE 
+current_state.IDLE 0 0 0 0 0 
+current_state.SELECT 0 0 1 1 0 
+current_state.PAYMENT 0 1 0 1 0 
+current_state.DISPENSE 1 0 0 1 0 
+current_state.COMPLETE 0 0 0 1 1 
+
+State Machine - |vending_machine|keypad:u_keypad|col_scan
+Name 
+col_scan.1110 
